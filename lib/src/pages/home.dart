@@ -10,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 
 class MyHomePageState extends State<MyHomePage> {
   // Variables para manejar el nombre y el estado del ícono
-  String nombre = 'Jorge Mosquera';
+  String nombre = 'Jorge Mosquera, Darwin Bracero y Miguel Guevara.';
   bool isIconChanged = false;
 
   @override
@@ -25,10 +25,15 @@ class MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // Muestra el nombre del usuario
-            Text(
-              'Hola, $nombre',
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Hola, $nombre',
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
             ),
+
             const SizedBox(height: 20), // Espacio entre elementos
             // Agregar contenedor que puede personalizarse
             Container(
